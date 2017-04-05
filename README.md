@@ -1,12 +1,11 @@
 # nodejs-architecture-sails
 
-[![N|Solid](http://www.bcm-corp.com/img_02/bcm_logo.png)](http://www.bcm-corp.com/)
+[![N|Solid](http://sailsjs.com/images/logo_sails@2x.png)](http://sailsjs.com)
 
 nodejs-architecture-sails is a real time backend. Its characterístics are as follow:
 
   - NodeJS Real Time Architecture
-  - Web Socket API
-  - RESTFull API
+  - NodeJS RESTFul Architecture
 
 ### Architecture Stack
 
@@ -24,7 +23,7 @@ Install the dependencies before start:
 
 ```sh
 $ sudo npm install -g sails
-$ cd mx-quick-riders-backend
+$ cd nodejs-architecture-sails
 $ sudo npm install -d
 ```
 
