@@ -1,7 +1,5 @@
 # nodejs-architecture-sails
 
-[![N|Solid](http://sailsjs.com/images/get_started_node@2x.png)](http://sailsjs.com)
-
 nodejs-architecture-sails is a real time backend. Its characterístics are as follow:
 
   - NodeJS Real Time Architecture
