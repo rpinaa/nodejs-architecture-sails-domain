@@ -1,13 +1,13 @@
-# nodejs-architecture-sails
+# nodejs-architecture-sails-domain-domain
 
-nodejs-architecture-sails is a real time backend. Its characterístics are as follow:
+nodejs-architecture-sails-domain is a real time backend. Its characterístics are as follow:
 
   - NodeJS Real Time Architecture
   - NodeJS RESTFul Architecture
 
 ### Architecture Stack
 
-nodejs-architecture-sails uses three technologies as follow:
+nodejs-architecture-sails-domain uses three technologies as follow:
 
 * [JavaScript 5+] - Supported by ECMAScript 5 and 6 as native language.
 * [NodeJS 7+] - Based on NodeJS architecture and environment.
@@ -15,13 +15,13 @@ nodejs-architecture-sails uses three technologies as follow:
 
 ### Installation
 
-nodejs-architecture-sails requires [Node.js](https://nodejs.org/) v7.5+ to run.
+nodejs-architecture-sails-domain requires [Node.js](https://nodejs.org/) v7.5+ to run.
 
 Install the dependencies before start:
 
 ```sh
 $ sudo npm install -g sails
-$ cd nodejs-architecture-sails
+$ cd nodejs-architecture-sails-domain
 $ sudo npm install -d
 ```
 
