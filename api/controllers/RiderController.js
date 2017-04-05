@@ -13,7 +13,6 @@ module.exports = {
       .mapping()
       .map(request.body.rider);
 
-    console.log(rider)
     ValidatorService.validate(rider, Rider.rules.register.rider);
 
     RiderService.registerRider(rider, (err) => err ? response.serverError(err) : response.ok());

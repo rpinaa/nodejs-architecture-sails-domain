@@ -9,7 +9,6 @@ module.exports = {
 
   getHealth(request, response) {
 
-
     return response
       .status(200)
       .json({status: 'UP'});
