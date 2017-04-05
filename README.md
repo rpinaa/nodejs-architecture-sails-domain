@@ -1,4 +1,4 @@
-# nodejs-architecture-sails-domain-domain
+# nodejs-architecture-sails-domain
 
 nodejs-architecture-sails-domain is a real time backend. Its characterístics are as follow:
 
