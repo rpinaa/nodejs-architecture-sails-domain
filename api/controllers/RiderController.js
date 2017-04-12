@@ -9,9 +9,7 @@ module.exports = {
 
   registerRider(request, response) {
 
-    const rider = RiderMapperService.build
-      .mapping()
-      .map(request.body.rider);
+    const rider = RiderMapper.build.map(request.body.rider);
 
     ValidatorService.validate(rider, Rider.rules.register.rider);
 
@@ -19,9 +17,7 @@ module.exports = {
   },
   createRider(request, response) {
 
-    const rider = RiderMapperService.build
-      .mapping()
-      .map(request.body.rider);
+    const rider = RiderMapper.build.map(request.body.rider);
 
     ValidatorService.validate(rider, Rider.rules.create.rider);
 
@@ -46,9 +42,7 @@ module.exports = {
   },
   updateRider(request, response) {
 
-    const rider = RiderMapperService.build
-      .mapping()
-      .map(request.body.rider);
+    const rider = RiderMapper.build.map(request.body.rider);
 
     ValidatorService.validate(rider, Rider.rules.register.rider);
 

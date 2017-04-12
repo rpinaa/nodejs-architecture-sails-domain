@@ -10,9 +10,7 @@ module.exports = {
   createDevice(request, response) {
 
     const idRider = request.param('idRider');
-    const device = DeviceMapperService.build
-      .mapping()
-      .map(request.body.device);
+    const device = DeviceMapper.build.map(request.body.device);
 
     ValidatorService.validate(device, Device.rules.create.device);
 
