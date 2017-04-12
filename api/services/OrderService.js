@@ -20,7 +20,6 @@ module.exports = {
         order.status = 'create';
         order.rider = idRider;
 
-        console.log(order)
         Order.create(order)
           .exec((err, data) => err ? callback(ErrorService.build('100')) : callback(null, data));
       }
