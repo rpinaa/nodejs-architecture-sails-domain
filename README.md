@@ -1,17 +1,18 @@
 # nodejs-architecture-sails-domain
 
-nodejs-architecture-sails-domain is a real time backend. Its characterístics are as follow:
+nodejs-architecture-sails-domain is a NodeJS backend. Its characteristics are as follow:
 
   - NodeJS Real Time Architecture
+  - NodeJS REST Architecture
   - NodeJS RESTFul Architecture
 
 ### Architecture Stack
 
-nodejs-architecture-sails-domain uses three technologies as follow:
+nodejs-architecture-sails-domain uses three technologies:
 
 * [JavaScript 5+] - Supported by ECMAScript 5 and 6 as native language.
 * [NodeJS 7+] - Based on NodeJS architecture and environment.
-* [SailsJS 0.12.0] - Supported by SailsJS Framework to complete all business rules.
+* [SailsJS 0.12.13] - Supported by SailsJS Framework to complete all business rules.
 
 ### Installation
 
@@ -49,6 +50,5 @@ License
 ----
 
 MIT
-
 
 **Free Software, Hell Yeah!**
