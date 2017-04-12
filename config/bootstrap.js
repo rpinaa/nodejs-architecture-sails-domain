@@ -11,11 +11,9 @@
 
 module.exports.bootstrap = function(cb) {
 
-  RiderMapperService.build.mapping();
-  DeviceMapperService.build.mapping();
-
   CachingService.setCatchable('riders');
   CachingService.setCatchable('devices');
+  CachingService.setCatchable('orders');
 
   cb();
 };
