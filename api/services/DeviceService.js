@@ -21,28 +21,31 @@ module.exports = {
       },
       (callback) => {
 
-        Device.findOne({serial: device.serial})
+        Rider.findOne({id: idRider, erased: false})
           .exec((err, data) => {
             err ? callback(ErrorService.build('100')) : callback(null, data);
           });
       },
-      (currentDevice, callback) => {
+      (currentRider, callback) => {
+
+        if (!currentRider) {
+          return callback(ErrorService.build('100'));
+        }
+
+        Device.findOne({serial: device.serial})
+          .exec((err, device) => {
+            err ? callback(ErrorService.build('100')) : callback(null, device, currentRider);
+          });
+      },
+      (currentDevice, currentRider, callback) => {
 
         if (currentDevice) {
-          if (!currentDevice.riders.find(id => id === idRider)) {
-            currentDevice.riders.push(idRider);
-
-            Device.update({id: currentDevice.id}, currentDevice)
-              .exec((err) => callback(err ? ErrorService.build('201') : null));
-          } else {
-            callback();
-          }
+          currentRider.devices.add(currentDevice.id);
         } else {
-          device.riders = idRider;
-
-          Device.create(device)
-            .exec((err) => callback(err ? ErrorService.build('201') : null));
+          currentRider.devices.add(device);
         }
+
+        currentRider.save({populate: false}, (err) => callback(err ? ErrorService.build('201') : null));
       }
     ], done);
   },
@@ -62,7 +65,8 @@ module.exports = {
           return callback(null, data);
         }
 
-        Device.findOne({id: idDevice, riders: [idRider]})
+        Device.findOne({id: idDevice})
+          .populate('riders', {where: {id : idRider}})
           .exec((err, device) => {
 
             if (err) {
@@ -93,17 +97,18 @@ module.exports = {
           return callback(null, data);
         }
 
-        Device.find({riders: [idRider]})
-          .exec((err, devices) => {
+        Rider.findOne({id: idRider, erased: false})
+          .populate('devices')
+          .exec((err, rider) => {
 
-            if (err) {
+            if (err || !rider) {
               return callback(ErrorService.build('100'));
             }
 
             CachingService.getCatchable('devices')
-              .set(idRider, {devices});
+              .set(idRider, {devices: rider.devices});
 
-            callback(null, {devices});
+            callback(null, {devices: rider.devices});
           });
 
       }
@@ -121,18 +126,17 @@ module.exports = {
       },
       (callback) => {
 
-        Device.findOne({id: idDevice, riders: {'contains': idRider}})
-          .exec((err, device) => {
-            err ? callback(ErrorService.build('100')) : callback(null, device);
+        Rider.findOne({id: idRider, erased: false})
+          .populate('devices')
+          .exec((err, rider) => {
+            err ? callback(ErrorService.build('100')) : callback(null, rider);
           });
       },
-      (device, callback) => {
+      (rider, callback) => {
 
-        if (device) {
-          device.riders.splice(device.riders.indexOf(idRider), 1);
-
-          Device.update({id: idDevice}, device)
-            .exec((err) => callback(err ? ErrorService.build('201') : null));
+        if (rider && rider.hasOwnProperty('devices')) {
+          rider.devices.remove(idDevice);
+          rider.save({populate: false}, (err) => callback(err ? ErrorService.build('201') : null));
         } else {
           callback(ErrorService.build('100'));
         }

@@ -158,7 +158,7 @@ module.exports = {
       }
     ], done);
   },
-  deleteRider (idRider, done) {
+  deleteRider(idRider, done) {
 
     async.waterfall([
       (callback) => {
