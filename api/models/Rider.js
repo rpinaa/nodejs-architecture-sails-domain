@@ -51,6 +51,15 @@ module.exports = {
       type: 'datetime',
       columnName: 'updated_date'
     },
+    orders: {
+      collection: 'order',
+      via: 'rider'
+    },
+    devices: {
+      collection: 'device',
+      via: 'device',
+      through: 'riderdevice'
+    },
     toJSON () {
 
       const obj = this.toObject();

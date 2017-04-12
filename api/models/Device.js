@@ -20,13 +20,14 @@ module.exports = {
       primaryKey: true,
       defaultsTo: uuid.v4
     },
-    riders: {
-      type: 'array',
-      columnName: 'riders'
-    },
     serial: {
       type: 'string',
       columnName: 'serial'
+    },
+    riders: {
+      collection: 'rider',
+      via: 'rider',
+      through: 'riderdevice'
     },
     toJSON () {
 
