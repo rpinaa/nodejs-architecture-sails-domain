@@ -1,8 +1,6 @@
 /**
- * ValidatorService, custom validator for business rules
+ * ValidatorService, keeps all the business rules to validate model constraints
  *
- * @description :: TODO: You might write a short summary of how this model works and what it represents here.
- * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
 const validator = require('Validator');

@@ -1,3 +1,8 @@
+/**
+ * CachingService, keeps all the business rules to catch model between request and response
+ *
+ */
+
 const cache = require('sailsjs-cacheman');
 const cacheQueue = {};
 

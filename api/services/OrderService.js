@@ -1,10 +1,6 @@
 /**
- * OrderService, keeps all the business rules for riders
+ * OrderService, keeps all the business rules for orders
  *
- * @required {Array} devices
- *   All the devices to send a message
- * @required {Function} done
- *   The callback to async process
  */
 
 module.exports = {

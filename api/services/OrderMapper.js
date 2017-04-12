@@ -1,10 +1,6 @@
 /**
- * OrderMapperService, keeps all the business rules for riders
+ * OrderMapper, keeps all the mapper needs for Order model
  *
- * @required {Array} devices
- *   All the devices to send a message
- * @required {Function} done
- *   The callback to async process
  */
 
 const ObjectMapper = require('two-way-object-mapper');

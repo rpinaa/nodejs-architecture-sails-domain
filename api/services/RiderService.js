@@ -1,10 +1,6 @@
 /**
  * RiderService, keeps all the business rules for riders
  *
- * @required {Array} devices
- *   All the devices to send a message
- * @required {Function} done
- *   The callback to async process
  */
 
 module.exports = {
