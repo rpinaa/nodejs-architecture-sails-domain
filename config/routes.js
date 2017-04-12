@@ -35,5 +35,7 @@ module.exports.routes = {
   'PUT /riders/:idRider/devices': 'DeviceController.createDevice',
   'GET /riders/:idRider/devices': 'DeviceController.getDevices',
   'GET /riders/:idRider/devices/:idDevice': 'DeviceController.getDevice',
-  'DELETE /riders/:idRider/devices/:idDevice': 'DeviceController.deleteDevice'
+  'DELETE /riders/:idRider/devices/:idDevice': 'DeviceController.deleteDevice',
+
+  'POST /riders/:idRider/orders': 'OrderController.createOrder'
 };
