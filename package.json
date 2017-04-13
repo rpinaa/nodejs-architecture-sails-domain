@@ -18,7 +18,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node ./node_modules/mocha/bin/mocha --recursive -t 5000"
   },
   "main": "app.js",
   "repository": {
@@ -28,6 +29,9 @@
   "author": "Ricardo Pina Arellano",
   "license": "MIT",
   "devDependencies": {
-    "sails-hook-autoreload": "^0.14.1"
+    "mocha": "^3.2.0",
+    "sails-hook-autoreload": "^0.14.1",
+    "sinon": "^2.1.0",
+    "supertest": "^3.0.0"
   }
 }
