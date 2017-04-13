@@ -46,6 +46,14 @@ For production environments:
 $ NODE_ENV=production sails lift
 ```
 
+### Testing
+
+For integration testing:
+
+```sh
+$ NODE_ENV=production npm test
+```
+
 License
 ----
 
