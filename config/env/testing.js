@@ -13,13 +13,13 @@
 module.exports = {
 
   models: {
-    connection: 'memory',
+    connection: 'localTestingDb',
     schema: true,
     migrations: 'drop'
   },
   connections: {
-    memory: {
-      adapter: 'sails-disk',
+    localTestingDb: {
+      adapter: 'sails-memory',
     }
   },
   session: {
