@@ -14,12 +14,15 @@
     "sails-mysql": "^0.11.5",
     "sailsjs-cacheman": "^0.1.4",
     "two-way-object-mapper": "^1.1.0",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "snyk": "^1.41.1"
   },
   "scripts": {
     "debug": "node debug app.js",
     "start": "node app.js",
-    "test": "node ./node_modules/mocha/bin/mocha --recursive -t 5000"
+    "test": "node ./node_modules/mocha/bin/mocha --recursive -t 5000",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "main": "app.js",
   "repository": {
@@ -33,5 +36,6 @@
     "sails-hook-autoreload": "^0.14.1",
     "sinon": "^2.1.0",
     "supertest": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
