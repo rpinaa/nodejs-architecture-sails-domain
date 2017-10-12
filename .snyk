@@ -1,6 +1,80 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.7.1
-ignore: {}
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:concat-stream:20160901':
+    - sails > anchor > geojsonhint > concat-stream:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:ejs:20161128':
+    - sails > ejs-locals > ejs:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:ejs:20161130':
+    - sails > ejs:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > ejs-locals > ejs:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:ejs:20161130-1':
+    - sails > ejs:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > ejs-locals > ejs:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:fresh:20170908':
+    - sails > @sailshq/express > fresh:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > @sailshq/express > send > fresh:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > serve-favicon > fresh:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > serve-static > send > fresh:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > @sailshq/express > @sailshq/connect > fresh:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > @sailshq/express > @sailshq/connect > serve-favicon > fresh:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > @sailshq/express > @sailshq/connect > serve-static > send > fresh:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:method-override:20170927':
+    - sails > method-override:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:mime:20170907':
+    - sails > @sailshq/express > send > mime:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > serve-static > send > mime:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > @sailshq/express > @sailshq/connect > serve-static > send > mime:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:mysql:20170317':
+    - sails-mysql > mysql:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:parsejson:20170908':
+    - sails > sails-hook-sockets > socket.io > socket.io-client > engine.io-client > parsejson:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+  'npm:qs:20170213':
+    - sails > grunt-contrib-watch > tiny-lr > qs:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
+    - sails > grunt-contrib-watch > tiny-lr > body-parser > qs:
+        reason: None given
+        expires: '2017-11-11T03:09:28.487Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
