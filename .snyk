@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.8.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:concat-stream:20160901':
@@ -75,6 +75,18 @@ ignore:
     - sails > grunt-contrib-watch > tiny-lr > body-parser > qs:
         reason: None given
         expires: '2017-11-11T03:09:28.487Z'
+  'npm:validator:20130705':
+    - Validator:
+        reason: None given
+        expires: '2017-12-03T18:07:37.236Z'
+  'npm:validator:20130705-1':
+    - Validator:
+        reason: None given
+        expires: '2017-12-03T18:07:37.236Z'
+  'npm:validator:20130705-2':
+    - Validator:
+        reason: None given
+        expires: '2017-12-03T18:07:37.236Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
