@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.8.0
+version: v1.10.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:concat-stream:20160901':
@@ -142,14 +142,23 @@ ignore:
     - Validator:
         reason: None given
         expires: '2017-12-03T18:07:37.236Z'
+    - Validator:
+        reason: None given
+        expires: '2018-01-08T01:12:49.718Z'
   'npm:validator:20130705-1':
     - Validator:
         reason: None given
         expires: '2017-12-03T18:07:37.236Z'
+    - Validator:
+        reason: None given
+        expires: '2018-01-08T01:12:49.718Z'
   'npm:validator:20130705-2':
     - Validator:
         reason: None given
         expires: '2017-12-03T18:07:37.236Z'
+    - Validator:
+        reason: None given
+        expires: '2018-01-08T01:12:49.718Z'
   'npm:ws:20171108':
     - sails > sails-hook-sockets > socket.io > engine.io > ws:
         reason: None given
