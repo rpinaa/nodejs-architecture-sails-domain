@@ -9,6 +9,9 @@ ignore:
     - sails > anchor > geojsonhint > concat-stream:
         reason: None given
         expires: '2017-12-25T01:46:01.072Z'
+    - sails > anchor > geojsonhint > concat-stream:
+        reason: None given
+        expires: '2018-02-19T23:47:35.366Z'
   'npm:ejs:20161128':
     - sails > ejs-locals > ejs:
         reason: None given
