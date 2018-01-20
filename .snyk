@@ -9,6 +9,9 @@ ignore:
     - sails > anchor > geojsonhint > concat-stream:
         reason: None given
         expires: '2017-12-25T01:46:01.072Z'
+    - sails > anchor > geojsonhint > concat-stream:
+        reason: None given
+        expires: '2018-02-19T23:48:15.957Z'
   'npm:ejs:20161128':
     - sails > ejs-locals > ejs:
         reason: None given
@@ -16,6 +19,9 @@ ignore:
     - sails > ejs-locals > ejs:
         reason: None given
         expires: '2017-12-25T01:46:01.072Z'
+    - sails > ejs-locals > ejs:
+        reason: None given
+        expires: '2018-02-19T23:48:15.957Z'
   'npm:ejs:20161130':
     - sails > ejs:
         reason: None given
@@ -29,6 +35,12 @@ ignore:
     - sails > ejs-locals > ejs:
         reason: None given
         expires: '2017-12-25T01:46:01.072Z'
+    - sails > ejs:
+        reason: None given
+        expires: '2018-02-19T23:48:15.957Z'
+    - sails > ejs-locals > ejs:
+        reason: None given
+        expires: '2018-02-19T23:48:15.957Z'
   'npm:ejs:20161130-1':
     - sails > ejs:
         reason: None given
@@ -42,6 +54,12 @@ ignore:
     - sails > ejs-locals > ejs:
         reason: None given
         expires: '2017-12-25T01:46:01.072Z'
+    - sails > ejs:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
+    - sails > ejs-locals > ejs:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
   'npm:fresh:20170908':
     - sails > @sailshq/express > fresh:
         reason: None given
@@ -85,6 +103,27 @@ ignore:
     - sails > @sailshq/express > @sailshq/connect > serve-static > send > fresh:
         reason: None given
         expires: '2017-12-25T01:46:01.072Z'
+    - sails > @sailshq/express > fresh:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
+    - sails > @sailshq/express > send > fresh:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
+    - sails > serve-favicon > fresh:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
+    - sails > serve-static > send > fresh:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
+    - sails > @sailshq/express > @sailshq/connect > fresh:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
+    - sails > @sailshq/express > @sailshq/connect > serve-favicon > fresh:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
+    - sails > @sailshq/express > @sailshq/connect > serve-static > send > fresh:
+        reason: None given
+        expires: '2018-02-19T23:48:15.958Z'
   'npm:method-override:20170927':
     - sails > method-override:
         reason: None given
@@ -92,6 +131,9 @@ ignore:
     - sails > method-override:
         reason: None given
         expires: '2017-12-25T01:46:01.073Z'
+    - sails > method-override:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:mime:20170907':
     - sails > @sailshq/express > send > mime:
         reason: None given
@@ -111,6 +153,15 @@ ignore:
     - sails > @sailshq/express > @sailshq/connect > serve-static > send > mime:
         reason: None given
         expires: '2017-12-25T01:46:01.073Z'
+    - sails > @sailshq/express > send > mime:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
+    - sails > serve-static > send > mime:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
+    - sails > @sailshq/express > @sailshq/connect > serve-static > send > mime:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:mysql:20170317':
     - sails-mysql > mysql:
         reason: None given
@@ -118,6 +169,9 @@ ignore:
     - sails-mysql > mysql:
         reason: None given
         expires: '2017-12-25T01:46:01.073Z'
+    - sails-mysql > mysql:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:parsejson:20170908':
     - sails > sails-hook-sockets > socket.io > socket.io-client > engine.io-client > parsejson:
         reason: None given
@@ -125,6 +179,9 @@ ignore:
     - sails > sails-hook-sockets > socket.io > socket.io-client > engine.io-client > parsejson:
         reason: None given
         expires: '2017-12-25T01:46:01.073Z'
+    - sails > sails-hook-sockets > socket.io > socket.io-client > engine.io-client > parsejson:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:qs:20170213':
     - sails > grunt-contrib-watch > tiny-lr > qs:
         reason: None given
@@ -138,6 +195,12 @@ ignore:
     - sails > grunt-contrib-watch > tiny-lr > body-parser > qs:
         reason: None given
         expires: '2017-12-25T01:46:01.073Z'
+    - sails > grunt-contrib-watch > tiny-lr > qs:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
+    - sails > grunt-contrib-watch > tiny-lr > body-parser > qs:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:validator:20130705':
     - Validator:
         reason: None given
@@ -145,6 +208,9 @@ ignore:
     - Validator:
         reason: None given
         expires: '2018-01-08T01:13:46.854Z'
+    - Validator:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:validator:20130705-1':
     - Validator:
         reason: None given
@@ -152,6 +218,9 @@ ignore:
     - Validator:
         reason: None given
         expires: '2018-01-08T01:13:46.854Z'
+    - Validator:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:validator:20130705-2':
     - Validator:
         reason: None given
@@ -159,6 +228,9 @@ ignore:
     - Validator:
         reason: None given
         expires: '2018-01-08T01:13:46.854Z'
+    - Validator:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
   'npm:ws:20171108':
     - sails > sails-hook-sockets > socket.io > engine.io > ws:
         reason: None given
@@ -166,6 +238,12 @@ ignore:
     - sails > sails-hook-sockets > socket.io > socket.io-client > engine.io-client > ws:
         reason: None given
         expires: '2017-12-25T01:46:01.073Z'
+    - sails > sails-hook-sockets > socket.io > engine.io > ws:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
+    - sails > sails-hook-sockets > socket.io > socket.io-client > engine.io-client > ws:
+        reason: None given
+        expires: '2018-02-19T23:48:15.959Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
