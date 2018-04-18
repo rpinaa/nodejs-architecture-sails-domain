@@ -1,5 +1,9 @@
+const swaggerTools = require('swagger-tools');
+const YAML = require('yamljs');
+const swaggerDoc = YAML.load('api/swagger/swagger.yaml');
+
 module.exports.http = {
-  /*middleware: {
+  middleware: {
     order: [
       'cookieParser',
       'session',
@@ -10,5 +14,8 @@ module.exports.http = {
       'www',
       'favicon',
     ],
-  },*/
+    customMiddleware(app) {
+      swaggerTools.initializeMiddleware(swaggerDoc, middleware => app.use(middleware.swaggerUi()));
+    }
+  },
 };
