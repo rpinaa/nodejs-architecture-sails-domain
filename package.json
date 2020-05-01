@@ -17,7 +17,8 @@
     "sails-mysql": "^1.0.0",
     "swagger-tools": "^0.10.3",
     "swagger-ui": "^3.13.4",
-    "yamljs": "^0.3.0"
+    "yamljs": "^0.3.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3"
@@ -26,7 +27,9 @@
     "start": "NODE_ENV=production node app.js",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
-    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "main": "app.js",
   "repository": {
@@ -37,5 +40,6 @@
   "license": "",
   "engines": {
     "node": ">=9.6"
-  }
+  },
+  "snyk": true
 }
